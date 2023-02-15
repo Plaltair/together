@@ -68,10 +68,7 @@ class _PostCardState extends State<PostCard> {
 
     return Container(
       // boundary needed for web
-      decoration: BoxDecoration(
-        border: Border.all(
-          color: width > webScreenSize ? secondaryColor : mobileBackgroundColor,
-        ),
+      decoration: const BoxDecoration(
         color: mobileBackgroundColor,
       ),
       padding: const EdgeInsets.symmetric(
