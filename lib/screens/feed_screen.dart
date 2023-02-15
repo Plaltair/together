@@ -51,7 +51,7 @@ class _FeedScreenState extends State<FeedScreen> {
               child: Column(
                 children: [
                   const SizedBox(
-                    height: 50,
+                    height: 90,
                   ),
                   PostCard(
                     key: UniqueKey(),

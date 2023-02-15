@@ -64,7 +64,6 @@ class _PostCardState extends State<PostCard> {
   @override
   Widget build(BuildContext context) {
     final model.User user = Provider.of<UserProvider>(context).getUser;
-    final width = MediaQuery.of(context).size.width;
 
     return Container(
       // boundary needed for web
@@ -92,12 +91,12 @@ class _PostCardState extends State<PostCard> {
               ),
               // HEADER SECTION OF THE POST
               Positioned(
-                top: -40,
+                top: -80,
                 child: Column(
                   children: <Widget>[
                     ProfileAvatar(
                       url: widget.snap['profImage'],
-                      radius: 40,
+                      radius: 80,
                     ),
                   ],
                 ),
